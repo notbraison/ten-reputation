@@ -98,6 +98,7 @@ Ten-Reputation demonstrates how AI agents can operate autonomously to verify off
 - Predictive analytics for meter anomaly detection.
 - Automated landlord tax filing.
 - Formation of decentralized landlord networks for verified trust and data sharing.
+- Prototype DEMO landlord frontend for property and tenant management.  - authentication email:sonson@gwag.com password:blunrenpawn
 
 ## Getting Started
 
