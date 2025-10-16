@@ -1,0 +1,8 @@
+/* 
+
+Tracks relationships between landlords and tenants.
+
+Enables mutual rating after lease completion.
+
+Future base for dispute resolution and DAO governance.
+ */

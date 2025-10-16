@@ -1,0 +1,328 @@
+# Ten-Reputation Learning Roadmap
+
+A structured roadmap to learn all the tools and technologies needed to build and deploy the **Ten-Reputation** dApp on the Somnia Testnet.
+
+---
+
+## Stage 1: Blockchain & Somnia Foundations
+
+**Goal:** Understand blockchain fundamentals, EVM concepts, and Somnia's architecture.
+
+### Objectives
+
+* [ ] Understand how blockchains, transactions, and smart contracts work.
+* [ ] Learn key EVM components (gas, state, bytecode execution).
+* [ ] Study Somnia architecture:
+
+  * MultiStream Consensus
+  * IceDB database
+  * Streaming compression and BLS aggregation
+  * How Somnia achieves high TPS
+* [ ] Learn how Somnia testnet functions (RPC endpoints, validators, SOMI token).
+
+### Practice Tasks
+
+* [ ] Add Somnia Testnet to MetaMask manually (RPC, Chain ID, symbol).✅
+* [ ] Request test tokens from the faucet and confirm wallet balance.✅
+* [ ] Send a transaction on the testnet and view it on the explorer.✅
+
+---
+
+## Stage 2: Solidity & Smart Contract Development
+
+**Goal:** Learn to write, compile, deploy, and test Solidity contracts.
+
+### Objectives
+
+* [ ] Learn Solidity syntax and structure (pragma, constructor, modifier, mapping).
+* [ ] Understand ERC-20 and ERC-721 token standards.
+* [ ] Study inheritance, events, and access modifiers.
+* [ ] Learn soulbound NFTs (non-transferable logic).
+
+### Practice Tasks
+
+* [ ] Complete Solidity basics on Remix or CryptoZombies.
+* [ ] Write and deploy a simple Storage contract.
+* [ ] Implement an ERC721 NFT with non-transferable restriction.
+* [ ] Deploy and interact with the contract on the Somnia Testnet.
+
+---
+
+## Stage 3: Foundry Toolkit Mastery
+
+**Goal:** Gain proficiency with Foundry for Solidity development and deployment.
+
+### Objectives
+
+* [ ] Install and configure Foundry (forge, cast, anvil).
+* [ ] Understand Foundry project structure (src/, test/, script/).
+* [ ] Write Solidity unit tests using `forge test`.
+* [ ] Simulate a blockchain locally using `anvil`.
+* [ ] Deploy to Somnia RPC using Foundry.
+
+### Practice Tasks
+
+* [ ] Initialize a Foundry project (`forge init`).
+* [ ] Write and test a simple Counter or ERC20 contract.
+* [ ] Deploy locally using Anvil and interact with `cast`.
+* [ ] Deploy the same contract to Somnia testnet.
+
+---
+
+## Stage 4: Scaffold-ETH + React + Wagmi
+
+**Goal:** Learn how to connect smart contracts to a modern frontend.
+
+### Objectives
+
+* [ ] Understand Scaffold-ETH project structure.
+* [ ] Learn Next.js and TypeScript basics.
+* [ ] Integrate RainbowKit and Wagmi for wallet connection.
+* [ ] Read and write contract state from React.
+* [ ] Use Wagmi hooks (`useContractRead`, `useContractWrite`).
+* [ ] Learn to abstract blockchain complexity for non-crypto users.
+
+### Practice Tasks
+
+* [ ] Clone the Scaffold-ETH 2 repository.
+* [ ] Run `yarn chain`, `yarn deploy`, and `yarn dev`.
+* [ ] Create a minimal UI that reads and updates contract data.
+* [ ] Connect Scaffold-ETH frontend to the Somnia Testnet.
+
+---
+
+## Stage 5: Somnia Ecosystem & Tools
+
+**Goal:** Understand Somnia-specific SDKs, tools, and database (IceDB).
+
+### Objectives
+
+* [ ] Study IceDB’s deterministic performance model.
+* [ ] Learn about Somnia’s staking, gas, and validator system.
+* [ ] Explore the Somnia block explorer.
+* [ ] Review Somnia CLI / SDK if available.
+
+### Practice Tasks
+
+* [ ] Read IceDB and tokenomics documentation.
+* [ ] Write a script that reads a contract event log.
+* [ ] Analyze transactions in the Somnia explorer.
+
+---
+
+## Stage 6: AI & Off-Chain Integration
+
+**Goal:** Prepare for integrating AI verification and backend automation.
+
+### Objectives
+
+* [ ] Understand AI agent structure and purpose.
+* [ ] Learn how webhooks and event listeners connect blockchain to backend.
+* [ ] Explore image verification and anomaly detection concepts.
+* [ ] Understand off-chain storage options (AWS DynamoDB, MongoDB).
+
+### Practice Tasks
+
+* [ ] Create a Node.js API endpoint that receives mock data.
+* [ ] Simulate an on-chain event trigger via webhook.
+* [ ] Log simulated AI verification results.
+
+---
+
+## Stage 7: Integration Readiness
+
+**Goal:** Combine all tools conceptually to understand the full Ten-Reputation system.
+
+### Layered Overview
+
+| Layer           | Tool                           | Role                                           |
+| --------------- | ------------------------------ | ---------------------------------------------- |
+| Smart Contracts | Solidity + Foundry             | Handles NFTs, rent logs, and tenant reputation |
+| Deployment      | Somnia Testnet                 | Executes transactions and stores data on-chain |
+| Frontend        | Scaffold-ETH (Next.js + Wagmi) | Provides dashboards for landlords and tenants  |
+| Backend         | Node.js / AWS                  | Manages AI verification and event automation   |
+| Storage         | Somnia DB / IPFS               | Stores meter photo and proof data              |
+| AI              | TensorFlow.js / OpenAI API     | Detects anomalies and verifies images          |
+
+---
+
+## Stage 8: Pre-Hackathon Dry Runs
+
+**Goal:** Rehearse the workflow before development.
+
+### Dry Run Tasks
+
+* [ ] Deploy a dummy contract and interact with it from the frontend.
+* [ ] Connect backend mock service to listen for on-chain events.
+* [ ] Simulate AI response triggering contract update.
+* [ ] Test dual role interaction (tenant vs landlord dashboards).
+
+---
+
+**End of Learning Roadmap**
+
+Once these stages are complete, you will have a deep understanding of every moving part in your stack and can confidently begin full development of the Ten-Reputation dApp.
+# Ten-Reputation Learning Roadmap
+
+A structured roadmap to learn all the tools and technologies needed to build and deploy the **Ten-Reputation** dApp on the Somnia Testnet.
+
+---
+
+## Stage 1: Blockchain & Somnia Foundations
+
+**Goal:** Understand blockchain fundamentals, EVM concepts, and Somnia's architecture.
+
+### Objectives
+
+* [ ] Understand how blockchains, transactions, and smart contracts work.
+* [ ] Learn key EVM components (gas, state, bytecode execution).
+* [ ] Study Somnia architecture:
+
+  * MultiStream Consensus
+  * IceDB database
+  * Streaming compression and BLS aggregation
+  * How Somnia achieves high TPS
+* [ ] Learn how Somnia testnet functions (RPC endpoints, validators, SOMI token).
+
+### Practice Tasks
+
+* [ ] Add Somnia Testnet to MetaMask manually (RPC, Chain ID, symbol).
+* [ ] Request test tokens from the faucet and confirm wallet balance.
+* [ ] Send a transaction on the testnet and view it on the explorer.
+
+---
+
+## Stage 2: Solidity & Smart Contract Development
+
+**Goal:** Learn to write, compile, deploy, and test Solidity contracts.
+
+### Objectives
+
+* [ ] Learn Solidity syntax and structure (pragma, constructor, modifier, mapping).
+* [ ] Understand ERC-20 and ERC-721 token standards.
+* [ ] Study inheritance, events, and access modifiers.
+* [ ] Learn soulbound NFTs (non-transferable logic).
+
+### Practice Tasks
+
+* [ ] Complete Solidity basics on Remix or CryptoZombies.
+* [ ] Write and deploy a simple Storage contract.
+* [ ] Implement an ERC721 NFT with non-transferable restriction.
+* [ ] Deploy and interact with the contract on the Somnia Testnet.
+
+---
+
+## Stage 3: Foundry Toolkit Mastery
+
+**Goal:** Gain proficiency with Foundry for Solidity development and deployment.
+
+### Objectives
+
+* [ ] Install and configure Foundry (forge, cast, anvil).
+* [ ] Understand Foundry project structure (src/, test/, script/).
+* [ ] Write Solidity unit tests using `forge test`.
+* [ ] Simulate a blockchain locally using `anvil`.
+* [ ] Deploy to Somnia RPC using Foundry.
+
+### Practice Tasks
+
+* [ ] Initialize a Foundry project (`forge init`).
+* [ ] Write and test a simple Counter or ERC20 contract.
+* [ ] Deploy locally using Anvil and interact with `cast`.
+* [ ] Deploy the same contract to Somnia testnet.
+
+---
+
+## Stage 4: Scaffold-ETH + React + Wagmi
+
+**Goal:** Learn how to connect smart contracts to a modern frontend.
+
+### Objectives
+
+* [ ] Understand Scaffold-ETH project structure.
+* [ ] Learn Next.js and TypeScript basics.
+* [ ] Integrate RainbowKit and Wagmi for wallet connection.
+* [ ] Read and write contract state from React.
+* [ ] Use Wagmi hooks (`useContractRead`, `useContractWrite`).
+* [ ] Learn to abstract blockchain complexity for non-crypto users.
+
+### Practice Tasks
+
+* [ ] Clone the Scaffold-ETH 2 repository.
+* [ ] Run `yarn chain`, `yarn deploy`, and `yarn dev`.
+* [ ] Create a minimal UI that reads and updates contract data.
+* [ ] Connect Scaffold-ETH frontend to the Somnia Testnet.
+
+---
+
+## Stage 5: Somnia Ecosystem & Tools
+
+**Goal:** Understand Somnia-specific SDKs, tools, and database (IceDB).
+
+### Objectives
+
+* [ ] Study IceDB’s deterministic performance model.
+* [ ] Learn about Somnia’s staking, gas, and validator system.
+* [ ] Explore the Somnia block explorer.
+* [ ] Review Somnia CLI / SDK if available.
+
+### Practice Tasks
+
+* [ ] Read IceDB and tokenomics documentation.
+* [ ] Write a script that reads a contract event log.
+* [ ] Analyze transactions in the Somnia explorer.
+
+---
+
+## Stage 6: AI & Off-Chain Integration
+
+**Goal:** Prepare for integrating AI verification and backend automation.
+
+### Objectives
+
+* [ ] Understand AI agent structure and purpose.
+* [ ] Learn how webhooks and event listeners connect blockchain to backend.
+* [ ] Explore image verification and anomaly detection concepts.
+* [ ] Understand off-chain storage options (AWS DynamoDB, MongoDB).
+
+### Practice Tasks
+
+* [ ] Create a Node.js API endpoint that receives mock data.
+* [ ] Simulate an on-chain event trigger via webhook.
+* [ ] Log simulated AI verification results.
+
+---
+
+## Stage 7: Integration Readiness
+
+**Goal:** Combine all tools conceptually to understand the full Ten-Reputation system.
+
+### Layered Overview
+
+| Layer           | Tool                           | Role                                           |
+| --------------- | ------------------------------ | ---------------------------------------------- |
+| Smart Contracts | Solidity + Foundry             | Handles NFTs, rent logs, and tenant reputation |
+| Deployment      | Somnia Testnet                 | Executes transactions and stores data on-chain |
+| Frontend        | Scaffold-ETH (Next.js + Wagmi) | Provides dashboards for landlords and tenants  |
+| Backend         | Node.js / AWS                  | Manages AI verification and event automation   |
+| Storage         | Somnia DB / IPFS               | Stores meter photo and proof data              |
+| AI              | TensorFlow.js / OpenAI API     | Detects anomalies and verifies images          |
+
+---
+
+## Stage 8: Pre-Hackathon Dry Runs
+
+**Goal:** Rehearse the workflow before development.
+
+### Dry Run Tasks
+
+* [ ] Deploy a dummy contract and interact with it from the frontend.
+* [ ] Connect backend mock service to listen for on-chain events.
+* [ ] Simulate AI response triggering contract update.
+* [ ] Test dual role interaction (tenant vs landlord dashboards).
+
+---
+
+**End of Learning Roadmap**
+
+Once these stages are complete, you will have a deep understanding of every moving part in your stack and can confidently begin full development of the Ten-Reputation dApp.
